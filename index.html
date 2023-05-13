@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon-padrao.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mobilefirts.css">
+    <title>Study Anywhere</title>
+</head>
+<body>
+    <header>
+    <nav class="nav-bar">
+        <div class="logo">
+            <abbr title="Estude em qualquer lugar">
+                <h3>Study Anywhere</h3>
+            </abbr>
+        </div>
+
+        <nav class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="pagina2.html" class="nav-link" target="_blank">Metrônomo</a></li>
+                <li class="nav-item"><a href="pagina3.html" class="nav-link" target="_blank">Sounds</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" target="_blank">Em breve</a></li>
+            </ul>
+            <!--
+                Menu (Caso seja necessário usar um dia.)
+                   <div class="mobile-menu-icon">
+                <button onclick="menuShow()" class="material-symbols-outlined">
+                    menu
+                    </button>
+            </div>
+            -->
+        </nav>
+    </nav>
+  </header>
+  <h1>Notas Naturais</h1>
+    <main>
+        <div class="container">
+                <section class="teclado_natural">
+            <button class="tecla tecla_c">C</button>
+            <button class="tecla tecla_d">D</button>
+            <button class="tecla tecla_e">E</button>
+            <button class="tecla tecla_f">F</button>
+            <button class="tecla tecla_g">G</button>
+            <button class="tecla tecla_a">A</button>
+            <button class="tecla tecla_b">B</button>
+        </section>
+        <h2>Notas Relativas</h2>
+        <section class="teclado_relativo">
+            <button class="tecla tecla_am">Am</button>
+            <button class="tecla tecla_bm">Bm</button>
+            <button class="tecla tecla_c#m">C#m</button>
+            <button class="tecla tecla_d">Dm</button>
+            <button class="tecla tecla_em">Em</button>
+            <button class="tecla tecla_f#m">F#m</button>
+            <button class="tecla tecla_g#m">G#m</button>
+            </section>
+            <h2>Notas Sustenidas</h2>
+            <section class="teclado_sustenido">
+                <button class="tecla tecla_c#">C#</button>
+                <button class="tecla tecla_d#">D#</button>
+                <button class="tecla tecla_f#">F#</button>
+                <button class="tecla tecla_g#">G#</button>
+                <button class="tecla tecla_a#">A#</button>
+        </section>
+            <h2>Notas Relativas Sustenidas</h2>
+            <section class="teclado_rel_sustenido">
+                <button class="tecla tecla_a#">A#</button>
+                <button class="tecla tecla_cm">Cm</button>
+                <button class="tecla tecla_d#m">D#m</button>
+                <button class="tecla tecla_fm">Fm</button>
+                <button class="tecla tecla_gm">Gm</button>
+        </section>
+        <h2 class="fundo-musicais-h2" >Fundos Musicais</h2>
+        <section class="teclado_rel_pregacao">
+            <button class="tecla tecla_"></button>
+            <button class="tecla tecla_"></button>
+            <button class="tecla tecla_"></button>
+        </section>
+        </div>
+    </main>
+    <!--Footer (Rodapé com direitos ao criador)-->
+<footer class="footer">
+  <div class="container-footer">
+    <div class="row">
+        <div class="col-redes">
+            <h3>Redes Sociais do Criador</h3>
+            <ul class="social-icons">
+              <li><a href="https://www.instagram.com/lealsantanaa/" target="_blank">
+                <img src="images/instagram.png" alt="rede-social-insta">
+              </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/esleyleal/" target="_blank">
+                    <img src="images/linkedin.png" alt="rede-social-linkedin">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/EsleyLeal" target="_blank">
+                    <img src="images/github.png" alt="rede-social-github">
+                </a>
+            </li>
+            </ul>
+          </div>
+      <div class="col-redes">
+        <h3>Redes Sociais do Produtor Musical</h3>
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.instagram.com/rafadjay/" target="_blank"> 
+                <img src="images/instagram.png" alt="rede-social-insta">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<!--Termos de uso-->
+    <p>Copyright © 2023 Esley Leal Santana. Todos os direitos reservados. <a href="termos-de-uso.html" target="_blank"><strong><i>Termos de Uso</i></strong></a></p>
+    <p>Não copie nosso conteúdo sem permissão. Todas as violações serão processadas.</p>
+<!--Termos de uso-->
+  
+</footer>
+<!--Fim do Footer-->
+
+
+<!--Notas Naturais-->
+    <audio src="sounds/NotasNaturais/DO MAIOR.wav" id="som_tecla_c"></audio>
+    <audio src="sounds/NotasNaturais/RE MAIOR.wav" id="som_tecla_d"></audio>
+    <audio src="sounds/NotasNaturais/MI  MAIOR.wav" id="som_tecla_e"></audio>
+    <audio src="sounds/NotasNaturais/FA MAIOR.wav" id="som_tecla_f"></audio>
+    <audio src="sounds/NotasNaturais/SOL MAIOR.wav" id="som_tecla_g"></audio>
+    <audio src="sounds/NotasNaturais/LA MAIOR.wav" id="som_tecla_a"></audio>
+    <audio src="sounds/NotasNaturais/SI MAIOR.wav" id="som_tecla_b"></audio>
+<!--Notas Relativas-->
+    <audio src="sounds/NotasRelativas /LA MENOR.wav" id="som_tecla_am"></audio>
+    <audio src="sounds/NotasRelativas /SI MENOR.wav" id="som_tecla_bm"></audio>
+    <audio src="sounds/NotasRelativas /DO SUSTENIDO MENOR.wav" id="som_tecla_c#m"></audio>
+    <audio src="sounds/NotasRelativas /RE MENOR.wav" id="som_tecla_dm"></audio>
+    <audio src="sounds/NotasRelativas /MI MENOR.wav" id="som_tecla_em"></audio>
+    <audio src="sounds/NotasRelativas /FÁ SUSTENIDO MENOR.wav" id="som_tecla_f#m"></audio>
+    <audio src="sounds/NotasRelativas /SOL SUSTENIDO MENOR.wav" id="som_tecla_g#m"></audio>
+<!--Notas Sustenidas-->
+    <audio src="sounds/NotasSustenidas/DO SUSTENIDO MAIOR.wav" id="som_tecla_c#"></audio>
+    <audio src="sounds/NotasSustenidas/RE SUSTENIDO MAIOR.wav" id="som_tecla_d#"></audio>
+    <audio src="sounds/NotasSustenidas/FA SUSTENIDO MAIOR.wav" id="som_tecla_f#"></audio>
+    <audio src="sounds/NotasSustenidas/SOL SUSTENIDO MAIOR.wav" id="som_tecla_g#"></audio>
+    <audio src="sounds/NotasSustenidas/LA SUSTENIDO MAIOR.wav" id="som_tecla_a#"></audio>
+<!--Notas Relativas Sustenidas-->
+    <audio src="sounds/NotasSustenidas/LA SUSTENIDO MAIOR.wav" id="som_tecla_a#"></audio>
+    <audio src="sounds/NotasRelativasSustenidas/DO MENOR-001.wav" id="som_tecla_cm"></audio>
+    <audio src="sounds/NotasRelativasSustenidas/RE SUSTENIDO MENOR.wav" id="som_tecla_d#m"></audio>
+    <audio src="sounds/NotasRelativasSustenidas/FA MENOR.wav" id="som_tecla_fm"></audio>
+    <audio src="sounds/NotasRelativasSustenidas/SOL MENOR.wav" id="som_tecla_gm"></audio>
+
+    <script src="script/audiopad.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+:root {
+  --cinza: #aaa;
+  --vermelha: #e93d50;
+  --vermelha-escura: #af303f;
+  --branca: #fff;
+  --ativo: #00ff1e;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(45deg, #a7cfdf 0%,#1D005C 100%);
+  min-height: 100vh;
+  margin-top: 1.3rem;
+}
+/*
+Aqui comeca o menu
+*/
+header{
+  background-color: #f7f7f7;
+  width: 100%;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+.nav-list ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0.4rem;
+    }
+.nav-list li{
+      padding: 10px;
+    }
+.logo {
+    margin: 10px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+/*Aqui termina o Menu*/  
+  
+h1{
+  color: var(--branca);
+  margin-bottom: 20px;
+  font-size: 2rem;
+  padding-top: 2.1rem;
+}
+abbr{
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+h2{
+  color: var(--branca);
+  margin-bottom: 20px;
+  font-size: 2rem;
+  padding-top: 2.1rem;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.teclado_natural {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+  border-radius: 30px;
+  margin: 1rem;
+  padding: 10px;
+}
+
+.teclado_relativo {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+  border-radius: 30px;
+  margin: 1rem;
+  padding: 10px;
+}
+
+.teclado_sustenido{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+  border-radius: 30px;
+  margin: 1rem;
+  padding: 10px;
+}
+.teclado_rel_sustenido{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+  border-radius: 30px;
+  margin: 1rem;
+  padding: 10px;
+}
+.fundo-musicais-h2{
+  display:none;
+}
+.teclado_rel_pregacao{
+  display: none;
+  margin: 1rem;
+}
+
+.tecla {
+  background-color: var(--branca);
+  border-radius: 30px;
+  box-shadow: 3px 3px 0 var(--cinza);
+  color: var(--vermelha);
+  cursor: pointer;
+  height: 120px;
+  font-size: 1.75em;
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  width: 120px;
+}
+.tecla.ativa,
+.tecla:active {
+  background-color: var(--vermelha);
+  border: 4px solid  var(--vermelha);
+  box-shadow: 3px 3px 0 var(--vermelha-escura) inset;
+  color: var(--branca);
+  outline: none;
+}
+
+.tecla.focus,
+.tecla:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px var(--ativo);
+}
+
+.tecla.active:focus,
+.tecla:active:focus {
+  box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
+}
+
+/*
+Meu footer com contatos
+*/
+
+.footer {
+  background-color: #1D005C;
+  color: #ffffff;
+  padding: 30px 0;
+  font-size: 14px;
+  width: 100%;
+  box-shadow: 1px 7px 38px 12px rgba(0,0,0,0.59);
+}
+.social-icons{
+  display: flex;
+  justify-content: center;
+}
+.social-icons li{
+  padding: 10px;
+}
+img{
+  width: 30px;
+}
+/*
+Fim do meu footer
+*/
+
+strong i {
+    text-decoration: underline;
+}
+
+
+
+
+/*
+Desktop Simples
+*/
+@media screen and (min-width: 768px) {
+  body{
+    background: linear-gradient(45deg, #a7cfdf 0%,#022D5C 100%);
+  }
+  footer{
+    background-color: #022D5C;
+  }
+}
+@media screen and (min-width: 1280px){
+  body{
+    background: linear-gradient(45deg, #a7cfdf 0%,#1D3C5C 100%);
+  }
+  footer{
+    background-color: #1D3C5C;
+  }
+}
+@media screen and (min-width: 890px) {
+  body{
+    background: linear-gradient(45deg, #a7cfdf 0%,#1D3C5C 100%);
+  }
+  footer{
+    background-color: #1D3C5C;
+  }
+  }
